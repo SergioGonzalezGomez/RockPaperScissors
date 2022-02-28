@@ -6,7 +6,6 @@
     background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
     height: 8vh;
     align-items: center;
-    
 }
 .header-p {
     font-size: 20px;
@@ -38,7 +37,6 @@
 .header-spockImg{
     width: 100%;
 }
-
 @media (min-width: 1024px) {
     .header {
         display: flex;
@@ -48,7 +46,6 @@
         background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
         height: 20vh;
     }
-    
 }
 @media (min-width: 1024px) {
     .header-spockDiv {
@@ -57,8 +54,6 @@
         margin-left: 50px;
     }
 }
-
-
 @media (min-width: 1024px) {
     .header-rankingDiv {
         width: 50px;

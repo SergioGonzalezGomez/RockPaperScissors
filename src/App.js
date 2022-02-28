@@ -3,7 +3,6 @@ import './App.css';
 import Home from './components/Home/Home';
 import Main from './components/Main/Main';
 import Ranking from './components/Ranking/Ranking';
-import MainSpock from './components/MainSpock/MainSpock';
 
 export default function App() {
   //Este estado sirve para decidir si se muestra home o main
@@ -78,20 +77,16 @@ export default function App() {
         currentPlayer={findCurrentPlayer()}
         createNewPlayer={createNewPlayer}
       />}
-      {(start === "Main") && <Main
+      {((start === "Main") || (start === "MainSpock")) && <Main
         toggleStart={toggleStart}
         currentPlayer={findCurrentPlayer()}
         updatePlayer={updatePlayer}
+        isSpock={isSpock}
       />}
       {(start === "Ranking") && <Ranking
         toggleStart={toggleStart}
         playersData={playersData}
         isSpock={isSpock}
-      />}
-      {(start === "MainSpock") && <MainSpock
-        toggleStart={toggleStart}
-        currentPlayer={findCurrentPlayer()}
-        updatePlayer={updatePlayer}
       />}
       </div>
   );

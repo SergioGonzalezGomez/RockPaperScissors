@@ -3,7 +3,7 @@ import './Game.css';
 
 export default function Game(props) {
     const [result, setResult] = React.useState("")
-    const [message, setMessage] = React.useState("")
+    const [message, setMessage] = React.useState("Result")
     const [lastBotMove, setLastBotMove] = React.useState("")
     const [isClicked, setIsClicked] = React.useState(false)
 
@@ -16,6 +16,7 @@ export default function Game(props) {
         if (!isClicked) {
             setIsClicked(true);
             setResult(`You: ${move} - Bot: ...`);
+            setMessage("");
             const botMove = calculateBotMove();  
             setLastBotMove(botMove);
             const moveResult = calculateResult(move, botMove);
@@ -70,9 +71,18 @@ export default function Game(props) {
     return (
         <div className="game-container">
             <div className="player-data">
-                <div className="player-data__div"><h3 className="player-data__h3">Games</h3><h3 className="player-data__h2">{props.currentPlayer.gamesPlayed}</h3></div>
-                <div className="player-data__div"><h3 className="player-data__h3">Won</h3><h3 className="player-data__h2">{props.currentPlayer.gamesWon}</h3></div>
-                <div className="player-data__div"><h3 className="player-data__h3">Lost</h3><h3 className="player-data__h2">{props.currentPlayer.gamesLost}</h3></div>
+                <div className="player-data__div">
+                    <h3 className="player-data__h3">Games</h3>
+                    <h3 className="player-data__h2">{props.currentPlayer.gamesPlayed}</h3>
+                </div>
+                <div className="player-data__div">
+                    <h3 className="player-data__h3">Won</h3>
+                    <h3 className="player-data__h2">{props.currentPlayer.gamesWon}</h3>
+                </div>
+                <div className="player-data__div">
+                    <h3 className="player-data__h3">Lost</h3>
+                    <h3 className="player-data__h2">{props.currentPlayer.gamesLost}</h3>
+                </div>
             </div>
             <div className="game-table">
                 <div className="game-table__div" onClick={() => {processMove("Rock")}} style={styles}>

@@ -3,7 +3,7 @@ import './GameSpock.css';
 
 export default function GameSpock(props) {
     const [result, setResult] = React.useState("")
-    const [message, setMessage] = React.useState("")
+    const [message, setMessage] = React.useState("Result")
     const [lastBotMove, setLastBotMove] = React.useState("")
     const [isClicked, setIsClicked] = React.useState(false)
 
@@ -16,6 +16,7 @@ export default function GameSpock(props) {
         if (!isClicked) {
             setIsClicked(true);
             setResult(`You: ${move} - Bot: ...`);
+            setMessage("");
             const botMove = calculateBotMove();  
             setLastBotMove(botMove);
             const moveResult = calculateResult(move, botMove);
@@ -76,9 +77,18 @@ export default function GameSpock(props) {
     return (
         <div className="gameSpock-container">
             <div className="playerSpock-data">
-                <div className="playerSpock-data__div"><h3 className="playerSpock-data__h3">Games</h3><h3 className="playerSpock-data__h2">{props.currentPlayer.gamesPlayed}</h3></div>
-                <div className="playerSpock-data__div"><h3 className="playerSpock-data__h3">Won</h3><h3 className="playerSpock-data__h2">{props.currentPlayer.gamesWon}</h3></div>
-                <div className="playerSpock-data__div"><h3 className="playerSpock-data__h3">Lost</h3><h3 className="playerSpock-data__h2">{props.currentPlayer.gamesLost}</h3></div>
+                <div className="playerSpock-data__div">
+                    <h3 className="playerSpock-data__h3">Games</h3>
+                    <h3 className="playerSpock-data__h2">{props.currentPlayer.gamesPlayed}</h3>
+                </div>
+                <div className="playerSpock-data__div">
+                    <h3 className="playerSpock-data__h3">Won</h3>
+                    <h3 className="playerSpock-data__h2">{props.currentPlayer.gamesWon}</h3>
+                </div>
+                <div className="playerSpock-data__div">
+                    <h3 className="playerSpock-data__h3">Lost</h3>
+                    <h3 className="playerSpock-data__h2">{props.currentPlayer.gamesLost}</h3>
+                </div>
             </div>
             <div className="gameSpock-table">
                 <div className="gameSpock-table__div" onClick={() => {processMove("Rock")}} style={styles}>
