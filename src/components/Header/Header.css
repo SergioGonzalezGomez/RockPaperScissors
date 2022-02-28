@@ -50,6 +50,14 @@
     }
     
 }
+@media (min-width: 1024px) {
+    .header-spockDiv {
+        width: 50px;
+        cursor: pointer;
+        margin-left: 50px;
+    }
+}
+
 
 @media (min-width: 1024px) {
     .header-rankingDiv {

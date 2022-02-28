@@ -61,7 +61,6 @@
 @media (min-width: 1024px) {
     .headerSpock-spockDiv {
         width: 50px;
-        margin: 5px 10px;
         cursor: pointer;
         margin-left: 50px;
     }
