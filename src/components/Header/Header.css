@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #000d1c;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+    height: 8vh;
+    align-items: center;
+    
+}
+.header-p {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.header-exitButtonDiv {
+    width: 50px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.header-exitButtonImg{
+    width: 100%;
+}
+.header-rankingDiv {
+    width: 50px;
+    margin: 5px 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.header-rankingImg{
+    width: 100%;
+}
+.header-spockDiv {
+    width: 50px;
+    margin: 5px 10px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.header-spockImg{
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #000d1c;
+        background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+        height: 20vh;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .header-rankingDiv {
+        width: 50px;
+        margin: 5px 10px;
+        cursor: pointer;
+        margin-left: 550px;
+    }
+}
