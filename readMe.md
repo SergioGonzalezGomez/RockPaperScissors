@@ -1,6 +1,6 @@
 ## Rock Paper Scissors!
 
----
+- A project I made of the famous game with the modality that implements Lizard & Spock! I hope you enjoy.
 
 ### Server
 
@@ -24,9 +24,9 @@
 - If you click the spockbutton in the header it will navigate you to the variant of the game with five options instead of three.
 - If you click the ranking button in the header it will show you the top 10 scores stored in the localstorage of your device.
 - The app is suitable for mobile and desktop.
-  <img src="./assets/responsive1.PNG" alt="Responsive screenshot">
-  <img src="./assets/responsive2.PNG" alt="Responsive screenshot">
-  <img src="./assets/responsive3.PNG" alt="Responsive screenshot">
-  <img src="./assets/responsive4.PNG" alt="Responsive screenshot">
-  <img src="./assets/responsive5.PNG" alt="Responsive screenshot">
-  <img src="./assets/responsive6.PNG" alt="Responsive screenshot">
+  <img src="./assets/responsive1.png" alt="Responsive screenshot" />
+  <img src="./assets/responsive2.png" alt="Responsive screenshot" />
+  <img src="./assets/responsive3.png" alt="Responsive screenshot" />
+  <img src="./assets/responsive4.png" alt="Responsive screenshot" />
+  <img src="./assets/responsive5.png" alt="Responsive screenshot" />
+  <img src="./assets/responsive6.png" alt="Responsive screenshot" />
