@@ -12,6 +12,7 @@
     width: 70%;
     align-items: center;
     margin-top: -21px;
+    overflow-y: scroll;
 }
 .ranking-div__headr {
     display:flex;
@@ -40,4 +41,21 @@
 }
 .ranking-exitButtonImg{
     width: 100%;
+}
+.ranking-div::-webkit-scrollbar {
+    background-color: rgb(0, 0, 0);
+    width:2px;
+    border-radius: 20px
+
+}
+.ranking-div::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 3px;
+}
+.ranking-div::-webkit-scrollbar-track {
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px
 }
