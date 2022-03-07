@@ -1,10 +1,10 @@
 ## Rock Paper Scissors!
 
-- A project I made of the famous game with the modality that implements Lizard & Spock! I hope you enjoy.
+- A project I made of the famous game with the modality that implements Lizard & Spock! I hope you enjoy
 
 ### Server
 
-- Use localhost as server and localstorage as database.
+- Use localhost as server and localstorage as database
 
 ### Client
 
